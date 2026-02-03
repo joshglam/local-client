@@ -5,7 +5,7 @@ import { Header, Footer } from '@/components';
 import { siteConfig } from '@/lib/config';
 import './globals.css';
 
-const GA_MEASUREMENT_ID = 'G-G8KMRFC09H';
+const GA_MEASUREMENT_ID = 'G-16SKMY95KB';
 
 const inter = Inter({
   subsets: ['latin'],
