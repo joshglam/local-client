@@ -70,11 +70,8 @@ export default function Home() {
         <div className="relative mx-auto max-w-5xl px-4">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-              {siteConfig.name}
-            </h1>
-            <p className="mx-auto mt-2 max-w-xl text-xl text-brand-200">
               HVAC, Plumbing & Electrical Services
-            </p>
+            </h1>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-brand-100">
               Professional home services for {siteConfig.city} homes and businesses.
               Get instant answers and upfront pricing — no waiting on hold.
