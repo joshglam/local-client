@@ -24,13 +24,8 @@ export function Header() {
   return (
     <header className="border-b border-gray-200 bg-white">
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 text-white font-bold text-sm">
-            LA
-          </div>
-          <span className="text-lg font-bold text-gray-900">
-            {siteConfig.name}
-          </span>
+        <Link href="/" className="text-lg font-bold text-gray-900">
+          {siteConfig.name}
         </Link>
         <nav className="hidden items-center gap-6 lg:flex">
           {/* Services Dropdown */}
