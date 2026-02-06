@@ -5,8 +5,9 @@ import { siteConfig, caseyConfig } from '@/lib/config';
 import { plumbingServices } from '@/lib/services';
 
 export const metadata: Metadata = {
-  title: 'Plumbing Services',
-  description: `Professional plumbing services in ${siteConfig.city}. Drain cleaning, leak repair, water heater installation, and emergency plumbing. Available 24/7.`,
+  title: 'Plumbing Services in Dallas-Fort Worth',
+  description:
+    'Need a plumber in Dallas-Fort Worth? Emergency plumbing, drain cleaning, leak detection, water heater repair & installation. Licensed plumbers, 24/7 service, upfront pricing.',
 };
 
 export default function PlumbingServicesPage() {

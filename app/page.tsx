@@ -1,7 +1,14 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import type { Metadata } from 'next';
 import { siteConfig, caseyConfig } from '@/lib/config';
 import { serviceCategories } from '@/lib/services';
+
+export const metadata: Metadata = {
+  title: 'Plumber & HVAC Services in Dallas-Fort Worth',
+  description:
+    'Need a plumber in Dallas-Fort Worth? Local Answer provides emergency plumbing, HVAC repair, and electrical services across 50+ DFW cities. Licensed, insured, same-day service.',
+};
 
 const categoryIcons: Record<string, React.ReactNode> = {
   cooling: (

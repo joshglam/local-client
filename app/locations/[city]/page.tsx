@@ -23,8 +23,8 @@ export async function generateMetadata({ params }: LocationPageProps): Promise<M
   }
 
   return {
-    title: `${location.name} Plumber - Plumbing Services in ${location.name}, TX`,
-    description: `Professional plumbing services in ${location.name}, Texas. 24/7 emergency repairs, water heater installation, drain cleaning & more. Fast response times in ${location.county}.`,
+    title: location.metaTitle || `${location.name} Plumber - Plumbing Services in ${location.name}, TX`,
+    description: location.metaDescription || `Professional plumbing services in ${location.name}, Texas. 24/7 emergency repairs, water heater installation, drain cleaning & more. Fast response times in ${location.county}.`,
   };
 }
 
@@ -68,12 +68,31 @@ export default async function LocationPage({ params }: LocationPageProps) {
     },
   };
 
+  const faqSchema = location.faqs && location.faqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: location.faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  } : null;
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <div className="bg-white">
         {/* Hero */}
         <section className="relative py-16 overflow-hidden">
@@ -204,6 +223,25 @@ export default async function LocationPage({ params }: LocationPageProps) {
             </div>
           </div>
         </section>
+
+        {/* FAQ Section */}
+        {location.faqs && location.faqs.length > 0 && (
+          <section className="py-12">
+            <div className="mx-auto max-w-5xl px-4">
+              <h2 className="text-2xl font-bold text-gray-900">
+                Frequently Asked Questions — {location.name}
+              </h2>
+              <div className="mt-8 space-y-6">
+                {location.faqs.map((faq) => (
+                  <div key={faq.question}>
+                    <h3 className="font-semibold text-gray-900">{faq.question}</h3>
+                    <p className="mt-2 text-gray-600">{faq.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Why Choose Us */}
         <section className="py-12">

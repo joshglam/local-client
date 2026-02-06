@@ -1,0 +1,205 @@
+# ----------------------------------------
+# View user engagement & retention overview
+# Account: casey response
+# Property: local answer
+# ----------------------------------------
+#  
+# Start date: 20260109
+# End date: 20260205
+Nth day,Active users
+0000,0
+0001,0
+0002,0
+0003,0
+0004,0
+0005,0
+0006,0
+0007,0
+0008,0
+0009,0
+0010,0
+0011,0
+0012,0
+0013,0
+0014,0
+0015,0
+0016,0
+0017,0
+0018,0
+0019,0
+0020,0
+0021,0
+0022,0
+0023,0
+0024,0
+0025,6
+0026,15
+0027,12
+
+# Start date: 20260109
+# End date: 20260205
+Nth day,New users
+0000,0
+0001,0
+0002,0
+0003,0
+0004,0
+0005,0
+0006,0
+0007,0
+0008,0
+0009,0
+0010,0
+0011,0
+0012,0
+0013,0
+0014,0
+0015,0
+0016,0
+0017,0
+0018,0
+0019,0
+0020,0
+0021,0
+0022,0
+0023,0
+0024,0
+0025,6
+0026,15
+0027,11
+
+# Where do your new users come from?
+# Start date: 20260109
+# End date: 20260205
+First user primary channel group (Default Channel Group),New users
+Direct,32
+
+#  
+# Start date: 20260109
+# End date: 20260205
+Page title and screen class,Views
+Local Answer - Professional Plumbing Services in Dallas,29
+AC Repair | Local Answer,1
+"Flower Mound Plumber - Plumbing Services in Flower Mound, TX | Local Answer",1
+"Plano Plumber - Plumbing Services in Plano, TX | Local Answer",1
+Plumbing Services | Local Answer,1
+Pro Tips - Plumbing Advice from the Experts | Local Answer,1
+
+#  
+# Start date: 20260109
+# End date: 20260205
+Platform,Active users
+"[""Web""]",32
+
+#  
+# Start date: 20260109
+# End date: 20260205
+Cohort,Day 1,Day 7
+0,0,0
+1,0,0
+2,0,0
+3,0,0
+4,0,0
+5,0,0
+6,0,0
+7,0,0
+8,0,0
+9,0,0
+10,0,0
+11,0,0
+12,0,0
+13,0,0
+14,0,0
+15,0,0
+16,0,0
+17,0,0
+18,0,0
+19,0,0
+20,0,0
+21,0,0
+22,0,0
+23,0,0
+24,0,0
+25,0,0
+26,0.06666666666666667,0
+27,0,0
+
+#  
+# Start date: 20260109
+# End date: 20260205
+Cohort,Day 1,Day 7
+0,0,0
+1,0,0
+2,0,0
+3,0,0
+4,0,0
+5,0,0
+6,0,0
+7,0,0
+8,0,0
+9,0,0
+10,0,0
+11,0,0
+12,0,0
+13,0,0
+14,0,0
+15,0,0
+16,0,0
+17,0,0
+18,0,0
+19,0,0
+20,0,0
+21,0,0
+22,0,0
+23,0,0
+24,0,0
+25,0,0
+26,6,0
+27,0,0
+
+#  
+# Start date: 20251226
+# End date: 20260205
+Cohort,Average engagement time per active user
+0000,0.20562770562770563
+0001,0.14285714285714285
+0002,0.04878048780487805
+0003,0
+0004,0
+0005,0
+0006,0
+0007,0
+0008,0
+0009,0
+0010,0
+0011,0
+0012,0
+0013,0
+0014,0
+0015,0
+0016,0
+0017,0
+0018,0
+0019,0
+0020,0
+0021,0
+0022,0
+0023,0
+0024,0
+0025,0
+0026,0
+0027,0
+0028,0
+0029,0
+0030,0
+0031,0
+0032,0
+0033,0
+0034,0
+0035,0
+0036,0
+0037,0
+0038,0
+0039,0
+0040,0
+0041,0
