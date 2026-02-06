@@ -1,0 +1,13 @@
+Priority,Page,Issue,Opportunity,Effort
+P0,/locations/mckinney,"45 impressions 0 clicks position 67 — highest impression location page","Optimize title/meta/content for McKinney plumber queries (45 combined query impressions). Best chance to reach page 1 first.",Medium
+P0,/locations/frisco,"33 impressions 0 clicks position 71.64 — 2nd highest impressions","Target 'plumber frisco' cluster (33 query impressions). Frisco is a high-income DFW suburb with strong search demand.",Medium
+P0,/locations/kennedale,"27 impressions 0 clicks position 53.67 — best position among top-impression pages","Already at position 53 (vs 67-78 for other top pages). Smallest city = less competition. Could reach page 1 fastest.",Medium
+P0,/services/plumbing,"Not appearing in GSC — plumbing queries account for ~90% of all impressions","Create/optimize the plumbing service hub page to capture generic 'plumber service' (position 14.5) and 'emergency plumber' (position 16.5) queries",High
+P1,/locations/rowlett,"30 impressions 0 clicks position 77.63","Optimize for rowlett plumber cluster (30 query impressions). Rowlett has less plumber competition than Frisco/McKinney.",Medium
+P1,/locations/denton,"28 impressions 0 clicks position 66.89","Optimize for denton plumber cluster (28 query impressions).",Medium
+P1,/locations/farmers-branch,"20 impressions 0 clicks position 78.05 — only location with HVAC query concentration","Farmers Branch is driving HVAC queries (heating repair 5 imp, furnace repair 4, hvac companies 2, etc). Add HVAC-specific content to this page.",Medium
+P1,/locations/allen,"6 impressions 0 clicks position 24.17 — best position of any location page","Already on page 3. Smaller city = less competition. Quick win if content is optimized.",Low
+P1,/locations/sunnyvale,"3 impressions 0 clicks position 20.33 — 2nd best position","Already page 2. Tiny market but proves the site CAN rank well for small cities.",Low
+P2,/locations/richardson,"11 impressions 0 clicks position 47.64","Mid-tier opportunity. Optimize alongside McKinney/Frisco sprint.",Medium
+P2,/locations/carrollton,"16 impressions 0 clicks position 58.19","Good impression volume. Target carrollton plumbing cluster (16 query impressions).",Medium
+P2,/ (homepage),"Not appearing in GSC at all","Ensure homepage is indexed and targeting 'plumber dallas' or 'dallas plumber' — currently invisible to search.",Low

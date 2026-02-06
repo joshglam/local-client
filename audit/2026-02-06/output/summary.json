@@ -1,0 +1,36 @@
+{
+  "auditDate": "2026-02-06",
+  "dataPeriod": { "start": "2026-01-09", "end": "2026-02-05" },
+  "keyFindings": [
+    "Site launched ~Feb 3 — only 3 days of GA data with 32 users (100% Direct), zero organic search sessions",
+    "Google has indexed 49 location pages and 1 service page, generating ~398 impressions but 0 clicks (0% CTR) — all pages rank position 20-100+",
+    "Plumbing queries dominate (~90% of impressions) with HVAC queries at ~7% — electrical queries are absent entirely",
+    "Top 5 location pages by impressions: McKinney (45), Frisco (33), Rowlett (30), Denton (28), Kennedale (27) — these are the cities Google sees the site as most relevant for",
+    "Homepage and service pages are nearly invisible in search — only /services/cooling has 1 impression at position 91"
+  ],
+  "biggestOpportunities": [
+    "Location pages are already indexed and getting impressions — optimize the top 10 location pages to move from position 50-80 toward page 1-2",
+    "Generic high-intent queries like 'emergency plumber' (position 16.5) and 'plumber service' (position 14.5) show the site CAN rank on page 2 for competitive terms",
+    "Zero service page visibility — getting /services/plumbing and sub-pages indexed and optimized would capture the service-intent queries driving location page impressions",
+    "HVAC queries cluster around Farmers Branch — optimize that location page with HVAC-specific content"
+  ],
+  "topRisks": [
+    "Brand new domain with zero backlink authority — positions 50-90 are typical but won't generate clicks without authority building",
+    "Homepage not appearing in Search Console at all — may not be indexed or not matching any search queries",
+    "Zero conversion tracking in GA — when traffic arrives, there's no way to measure leads",
+    "Data is extremely thin (3 days of GA, 28 days of GSC) — conclusions are directional, not definitive"
+  ],
+  "trafficOverview": {
+    "totalUsers": 32,
+    "totalPageViews": 34,
+    "organicSearchSessions": 0,
+    "organicSearchPct": 0,
+    "directPct": 100,
+    "totalImpressions": 398,
+    "totalClicks": 0,
+    "averageCTR": 0,
+    "averagePosition": 67.5,
+    "indexedPages": 50,
+    "queryCount": 221
+  }
+}

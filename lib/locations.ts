@@ -1,5 +1,10 @@
 import { siteConfig } from './config';
 
+export interface LocationFAQ {
+  question: string;
+  answer: string;
+}
+
 export interface Location {
   slug: string;
   name: string;
@@ -8,6 +13,9 @@ export interface Location {
   description: string;
   neighborhoods?: string[];
   zipCodes: string[];
+  metaTitle?: string;
+  metaDescription?: string;
+  faqs?: LocationFAQ[];
 }
 
 export const locations: Location[] = [
@@ -28,6 +36,22 @@ export const locations: Location[] = [
     description: 'Allen is known for its excellent schools and family-friendly neighborhoods. We provide professional plumbing services to homes throughout Allen.',
     neighborhoods: ['Twin Creeks', 'Watters Creek', 'The Village at Allen', 'Allen Station'],
     zipCodes: ['75002', '75013'],
+    metaTitle: 'Allen Plumber | Plumbing Services in Allen, TX',
+    metaDescription: 'Professional plumber in Allen, TX. Emergency plumbing, water heater repair, drain cleaning & leak detection. Serving Twin Creeks, Watters Creek & all Allen neighborhoods.',
+    faqs: [
+      {
+        question: 'Do you serve Allen, TX for plumbing?',
+        answer: 'Yes, we provide professional plumbing services throughout Allen, including Twin Creeks, Watters Creek, The Village at Allen, and Allen Station.',
+      },
+      {
+        question: 'Can you fix a water heater in Allen?',
+        answer: 'Yes, we repair and replace all types of water heaters in Allen, TX \u2014 including tank, tankless, and hybrid models. Same-day service available.',
+      },
+      {
+        question: 'Is emergency plumbing available in Allen?',
+        answer: 'Yes, we offer 24/7 emergency plumbing in Allen. Call (469) 259-4385 or chat with us for immediate help with burst pipes, leaks, and other emergencies.',
+      },
+    ],
   },
   {
     slug: 'anna',
@@ -158,6 +182,22 @@ export const locations: Location[] = [
     description: 'Home to two major universities, Denton has a vibrant community with diverse housing needs. We service students, families, and businesses throughout Denton.',
     neighborhoods: ['Downtown Denton', 'Robson Ranch', 'Quakertown', 'Vintage Denton'],
     zipCodes: ['76201', '76203', '76205', '76207', '76208', '76209', '76210'],
+    metaTitle: 'Denton Plumber | Plumbing Services in Denton, TX',
+    metaDescription: 'Professional plumber in Denton, TX. Emergency plumbing, drain cleaning, water heater installation & pipe repair. Serving Downtown Denton, Robson Ranch & all neighborhoods.',
+    faqs: [
+      {
+        question: 'Do you provide plumbing services near UNT and TWU in Denton?',
+        answer: 'Yes, we serve all of Denton including the areas around UNT and TWU. We work with homeowners, landlords, and property managers throughout Denton.',
+      },
+      {
+        question: 'What emergency plumbing services do you offer in Denton?',
+        answer: 'We handle burst pipes, sewer backups, water heater failures, gas leaks, and overflowing fixtures 24/7 in Denton. Call or chat for immediate assistance.',
+      },
+      {
+        question: 'How much does drain cleaning cost in Denton, TX?',
+        answer: 'Drain cleaning in Denton typically costs $150\u2013$350 depending on the severity and location of the clog. We provide upfront pricing before starting work.',
+      },
+    ],
   },
   {
     slug: 'desoto',
@@ -190,9 +230,25 @@ export const locations: Location[] = [
     name: 'Farmers Branch',
     county: 'Dallas County',
     population: '37,000',
-    description: 'Farmers Branch is conveniently located near major highways and offers great value. We serve all Farmers Branch neighborhoods with reliable plumbing services.',
+    description: 'Farmers Branch is conveniently located near major highways and offers great value. We serve all Farmers Branch neighborhoods with reliable plumbing and HVAC services.',
     neighborhoods: ['Brookhaven', 'Mercer Crossing', 'Valley View'],
     zipCodes: ['75234', '75244'],
+    metaTitle: 'Farmers Branch Plumber & HVAC | Heating Repair in Farmers Branch, TX',
+    metaDescription: 'Plumbing and HVAC services in Farmers Branch, TX. Heating repair, furnace service, emergency plumbing & drain cleaning. Fast response in Brookhaven, Mercer Crossing & all areas.',
+    faqs: [
+      {
+        question: 'Do you offer heating repair in Farmers Branch?',
+        answer: 'Yes, we provide furnace and heating repair services in Farmers Branch, including diagnostics, part replacement, and 24/7 emergency heating service.',
+      },
+      {
+        question: 'What HVAC services are available in Farmers Branch?',
+        answer: 'We offer heating repair, furnace installation, AC repair, AC installation, and HVAC maintenance for homes throughout Farmers Branch, including Brookhaven and Mercer Crossing.',
+      },
+      {
+        question: 'Do you provide plumbing services in Farmers Branch too?',
+        answer: 'Yes, we offer complete plumbing services in Farmers Branch including drain cleaning, leak detection, water heater installation, and emergency plumbing.',
+      },
+    ],
   },
   {
     slug: 'flower-mound',
@@ -229,6 +285,22 @@ export const locations: Location[] = [
     description: 'As one of the fastest-growing cities in Texas, Frisco has a mix of new construction and established homes. We provide expert plumbing services for both.',
     neighborhoods: ['Stonebriar', 'Starwood', 'Newman Village', 'Phillips Creek Ranch', 'Richwoods'],
     zipCodes: ['75033', '75034', '75035'],
+    metaTitle: 'Frisco Plumber | 24/7 Plumbing Services in Frisco, TX',
+    metaDescription: 'Looking for a plumber in Frisco, TX? Emergency plumbing, leak repair, water heater installation & drain cleaning. Serving Stonebriar, Starwood & all Frisco neighborhoods.',
+    faqs: [
+      {
+        question: 'How quickly can a plumber get to my Frisco home?',
+        answer: 'We typically arrive at Frisco homes within 1\u20132 hours for standard calls, with same-day appointments available. Emergency calls are prioritized for the fastest response.',
+      },
+      {
+        question: 'Do you work on new construction homes in Frisco?',
+        answer: 'Yes, we service both new construction and established homes across Frisco, including Stonebriar, Starwood, Newman Village, Phillips Creek Ranch, and Richwoods.',
+      },
+      {
+        question: 'What should I do if I have a burst pipe in Frisco?',
+        answer: 'Shut off your main water valve immediately and call us. We provide 24/7 emergency plumbing in Frisco and can typically arrive within an hour for burst pipes.',
+      },
+    ],
   },
   {
     slug: 'garland',
@@ -316,6 +388,22 @@ export const locations: Location[] = [
     population: '8,500',
     description: 'Kennedale is a small town with a friendly community feel. Our plumbers provide reliable service to Kennedale residents.',
     zipCodes: ['76060'],
+    metaTitle: 'Kennedale Plumber | Plumbing & Leak Detection in Kennedale, TX',
+    metaDescription: 'Professional plumber in Kennedale, TX. Leak detection, emergency plumbing, drain cleaning & water heater services. Fast response, upfront pricing.',
+    faqs: [
+      {
+        question: 'Do you offer leak detection in Kennedale?',
+        answer: 'Yes, we provide professional leak detection in Kennedale using advanced equipment to locate hidden water leaks without damaging your property.',
+      },
+      {
+        question: 'How much does emergency plumbing cost in Kennedale?',
+        answer: 'Emergency plumbing rates in Kennedale vary by the issue. We always provide upfront pricing before starting any work \u2014 no surprise charges.',
+      },
+      {
+        question: 'What areas near Kennedale do you serve?',
+        answer: 'We serve all of Kennedale and surrounding Tarrant County areas including Arlington, Mansfield, and Everman.',
+      },
+    ],
   },
   {
     slug: 'lake-worth',
@@ -376,6 +464,22 @@ export const locations: Location[] = [
     description: 'McKinney blends historic charm with modern growth. Whether you have a historic downtown home or a new build in Craig Ranch, we have you covered.',
     neighborhoods: ['Historic Downtown', 'Craig Ranch', 'Stonebridge Ranch', 'Eldorado', 'Trinity Falls'],
     zipCodes: ['75069', '75070', '75071', '75072'],
+    metaTitle: 'McKinney Plumber | 24/7 Plumbing Services in McKinney, TX',
+    metaDescription: 'Need a plumber in McKinney, TX? Local Answer offers emergency plumbing, drain cleaning, water heater repair & more in Craig Ranch, Stonebridge Ranch & all McKinney neighborhoods.',
+    faqs: [
+      {
+        question: 'How much does a plumber cost in McKinney, TX?',
+        answer: 'Plumbing service calls in McKinney typically range from $150\u2013$450 depending on the repair. We provide upfront pricing before any work begins \u2014 no hidden fees.',
+      },
+      {
+        question: 'Do you offer emergency plumbing in McKinney?',
+        answer: 'Yes, we provide 24/7 emergency plumbing throughout McKinney, including Craig Ranch, Stonebridge Ranch, Eldorado, and all neighborhoods. Call or chat for immediate help.',
+      },
+      {
+        question: 'What plumbing services are available in McKinney?',
+        answer: 'We offer drain cleaning, leak detection, water heater repair and installation, pipe repair, fixture installation, sewer line service, and emergency plumbing in McKinney, TX.',
+      },
+    ],
   },
   {
     slug: 'melissa',
@@ -464,6 +568,22 @@ export const locations: Location[] = [
     description: 'Rowlett is situated on Lake Ray Hubbard with great lakefront living. Our plumbers serve Rowlett residents with fast, reliable service.',
     neighborhoods: ['Waterview', 'Bayside', 'Princeton Estates'],
     zipCodes: ['75088', '75089'],
+    metaTitle: 'Rowlett Plumber | 24/7 Plumbing Services in Rowlett, TX',
+    metaDescription: 'Need a plumber in Rowlett, TX? Emergency plumbing, water heater repair, drain cleaning & leak detection. Serving Waterview, Bayside & all Rowlett neighborhoods.',
+    faqs: [
+      {
+        question: 'How quickly can a plumber reach Rowlett?',
+        answer: 'We typically arrive at Rowlett homes within 1\u20132 hours. We serve all Rowlett neighborhoods including Waterview, Bayside, and Princeton Estates.',
+      },
+      {
+        question: 'Do you offer water heater services in Rowlett?',
+        answer: 'Yes, we install and repair both tank and tankless water heaters throughout Rowlett, TX. We offer same-day service for water heater emergencies.',
+      },
+      {
+        question: 'What plumbing problems are common in Rowlett homes?',
+        answer: 'Rowlett homes near Lake Ray Hubbard often experience hard water buildup, water heater issues, and drain clogs. We handle all of these with professional service.',
+      },
+    ],
   },
   {
     slug: 'royse-city',
@@ -505,6 +625,22 @@ export const locations: Location[] = [
     population: '7,500',
     description: 'Sunnyvale features large lots and a rural atmosphere east of Dallas. We provide quality plumbing services to Sunnyvale residents.',
     zipCodes: ['75182'],
+    metaTitle: 'Sunnyvale Plumber | Plumbing Services in Sunnyvale, TX',
+    metaDescription: 'Need a plumber in Sunnyvale, TX? Professional plumbing services including emergency repairs, drain cleaning & water heater installation. Fast response times.',
+    faqs: [
+      {
+        question: 'Do you service Sunnyvale, TX?',
+        answer: 'Yes, we provide professional plumbing services to all Sunnyvale homes. Despite being a smaller community, we offer the same fast response and quality service.',
+      },
+      {
+        question: 'What plumbing services are available in Sunnyvale?',
+        answer: 'We offer emergency plumbing, drain cleaning, leak detection, water heater repair and installation, pipe repair, and fixture installation in Sunnyvale, TX.',
+      },
+      {
+        question: 'How far is Sunnyvale from your service area?',
+        answer: 'Sunnyvale is well within our Dallas-Fort Worth service area. We serve Sunnyvale and surrounding communities in eastern Dallas County.',
+      },
+    ],
   },
   {
     slug: 'terrell',
