@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import { siteConfig, caseyConfig } from '@/lib/config';
 import { serviceCategories, coolingServices, heatingServices, plumbingServices, electricalServices } from '@/lib/services';
@@ -119,13 +117,12 @@ export function Header() {
             About
           </Link>
         </nav>
-        <button
-          type="button"
+        <a
+          href={caseyConfig.phoneHref}
           className="rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-700"
-          data-casey-trigger="true"
         >
-          {caseyConfig.ctaText}
-        </button>
+          {caseyConfig.phone}
+        </a>
       </div>
     </header>
   );

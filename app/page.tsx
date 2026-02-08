@@ -83,19 +83,12 @@ export default function Home() {
               Professional home services for {siteConfig.city} homes and businesses.
               Get instant answers and upfront pricing — no waiting on hold.
             </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <button
-                type="button"
-                className="rounded-lg bg-accent-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:bg-accent-600 hover:scale-105"
-                data-casey-trigger="true"
-              >
-                {caseyConfig.ctaText}
-              </button>
+            <div className="mt-8">
               <a
-                href="tel:+1-469-259-4385"
-                className="rounded-lg bg-white/10 px-8 py-4 text-lg font-semibold text-white backdrop-blur transition-colors hover:bg-white/20"
+                href={caseyConfig.phoneHref}
+                className="inline-block rounded-lg bg-accent-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:bg-accent-600 hover:scale-105"
               >
-                Call (469) 259-4385
+                Call {caseyConfig.phone}
               </a>
             </div>
           </div>
@@ -154,15 +147,16 @@ export default function Home() {
             Get Expert Help in Minutes — Not Hours
           </h2>
           <p className="mt-2 text-brand-100">
-            Chat with us now for instant answers, accurate quotes, and same-day scheduling.
+            Call us now for instant answers, accurate quotes, and same-day scheduling.
           </p>
-          <button
-            type="button"
-            className="mt-4 rounded-lg bg-white px-8 py-3 font-semibold text-brand-600 shadow-lg transition-all hover:bg-brand-50 hover:scale-105"
-            data-casey-trigger="true"
-          >
-            Start Chat Now
-          </button>
+          <div className="mt-4">
+            <a
+              href={caseyConfig.phoneHref}
+              className="inline-block rounded-lg bg-white px-8 py-3 font-semibold text-brand-600 shadow-lg transition-all hover:bg-brand-50 hover:scale-105"
+            >
+              Call {caseyConfig.phone}
+            </a>
+          </div>
         </div>
       </section>
 
@@ -242,21 +236,14 @@ export default function Home() {
             Ready to Get Started?
           </h2>
           <p className="mt-4 text-lg text-gray-300">
-            Get a free quote in minutes. No obligation, no pressure.
+            Call for a free quote in minutes. No obligation, no pressure.
           </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <button
-              type="button"
-              className="rounded-lg bg-brand-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:bg-brand-600 hover:scale-105"
-              data-casey-trigger="true"
-            >
-              {caseyConfig.ctaText}
-            </button>
+          <div className="mt-8">
             <a
-              href="tel:+1-469-259-4385"
-              className="rounded-lg border-2 border-white px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-white hover:text-gray-900"
+              href={caseyConfig.phoneHref}
+              className="inline-block rounded-lg bg-brand-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:bg-brand-600 hover:scale-105"
             >
-              (469) 259-4385
+              Call {caseyConfig.phone}
             </a>
           </div>
         </div>

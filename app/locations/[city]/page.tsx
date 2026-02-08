@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from 'next';
-import { siteConfig } from '@/lib/config';
+import { siteConfig, caseyConfig } from '@/lib/config';
 import { getLocationBySlug, getAllLocationSlugs } from '@/lib/locations';
 
 interface LocationPageProps {
@@ -119,19 +119,12 @@ export default async function LocationPage({ params }: LocationPageProps) {
               Professional plumbing services in {location.name}, Texas.
               Fast response times, upfront pricing, and 24/7 availability.
             </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <button
-                type="button"
-                className="rounded-lg bg-accent-500 px-6 py-3 font-semibold text-white shadow-lg transition-all hover:bg-accent-600 hover:scale-105"
-                data-casey-trigger="true"
-              >
-                Get a Free Quote in {location.name}
-              </button>
+            <div className="mt-8">
               <a
-                href="tel:+1-469-259-4385"
-                className="rounded-lg bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur transition-colors hover:bg-white/20"
+                href={caseyConfig.phoneHref}
+                className="inline-block rounded-lg bg-accent-500 px-6 py-3 font-semibold text-white shadow-lg transition-all hover:bg-accent-600 hover:scale-105"
               >
-                Call (469) 259-4385
+                Call {caseyConfig.phone}
               </a>
             </div>
           </div>
@@ -296,13 +289,14 @@ export default async function LocationPage({ params }: LocationPageProps) {
             <p className="mt-4 text-brand-100">
               Get instant answers and a free quote. We&apos;re available 24/7 for emergencies.
             </p>
-            <button
-              type="button"
-              className="mt-6 rounded-lg bg-white px-8 py-3 font-semibold text-brand-600 shadow-lg transition-all hover:bg-brand-50 hover:scale-105"
-              data-casey-trigger="true"
-            >
-              Chat With Us Now
-            </button>
+            <div className="mt-6">
+              <a
+                href={caseyConfig.phoneHref}
+                className="inline-block rounded-lg bg-white px-6 py-3 font-semibold text-brand-600 shadow-lg transition-all hover:bg-brand-50 hover:scale-105"
+              >
+                Call {caseyConfig.phone}
+              </a>
+            </div>
           </div>
         </section>
       </div>

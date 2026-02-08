@@ -109,19 +109,12 @@ export default async function ServicePage({ params }: ServicePageProps) {
             </nav>
             <h1 className="text-4xl font-bold text-white">{service.hero.title}</h1>
             <p className={`mt-4 text-lg ${categoryHeroColors[service.category].textLight}`}>{service.hero.subtitle}</p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <button
-                type="button"
-                className="rounded-lg bg-accent-500 px-6 py-3 font-semibold text-white shadow-lg transition-colors hover:bg-accent-600"
-                data-casey-trigger="true"
-              >
-                {caseyConfig.ctaText}
-              </button>
+            <div className="mt-8">
               <a
-                href="tel:+1-469-259-4385"
-                className="rounded-lg bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur transition-colors hover:bg-white/20"
+                href={caseyConfig.phoneHref}
+                className="inline-block rounded-lg bg-accent-500 px-6 py-3 font-semibold text-white shadow-lg transition-colors hover:bg-accent-600"
               >
-                Call (469) 259-4385
+                Call {caseyConfig.phone}
               </a>
             </div>
           </div>
@@ -175,15 +168,14 @@ export default async function ServicePage({ params }: ServicePageProps) {
                   <div className="rounded-lg bg-brand-600 p-6 text-white">
                     <h3 className="font-bold">Need This Service?</h3>
                     <p className="mt-2 text-sm text-brand-100">
-                      Get a free quote and schedule service today.
+                      Call for a free quote and schedule service today.
                     </p>
-                    <button
-                      type="button"
-                      className="mt-4 w-full rounded-lg bg-white px-4 py-2 font-semibold text-brand-600 transition-colors hover:bg-brand-50"
-                      data-casey-trigger="true"
+                    <a
+                      href={caseyConfig.phoneHref}
+                      className="mt-4 block w-full rounded-lg bg-white px-4 py-2 text-center font-semibold text-brand-600 transition-colors hover:bg-brand-50"
                     >
-                      {caseyConfig.ctaText}
-                    </button>
+                      Call {caseyConfig.phone}
+                    </a>
                   </div>
                 </div>
               </div>
@@ -225,15 +217,16 @@ export default async function ServicePage({ params }: ServicePageProps) {
               Ready to Get Started?
             </h2>
             <p className="mt-4 text-gray-600">
-              Chat with us to get a free quote and schedule your {service.name.toLowerCase()} service.
+              Call us to get a free quote and schedule your {service.name.toLowerCase()} service.
             </p>
-            <button
-              type="button"
-              className="mt-6 rounded-lg bg-brand-600 px-8 py-3 font-semibold text-white shadow-lg transition-colors hover:bg-brand-700"
-              data-casey-trigger="true"
-            >
-              Get Your Free Quote
-            </button>
+            <div className="mt-6">
+              <a
+                href={caseyConfig.phoneHref}
+                className="inline-block rounded-lg bg-brand-600 px-8 py-3 font-semibold text-white shadow-lg transition-colors hover:bg-brand-700"
+              >
+                Call {caseyConfig.phone}
+              </a>
+            </div>
           </div>
         </section>
       </div>

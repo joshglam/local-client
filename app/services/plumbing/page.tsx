@@ -42,19 +42,12 @@ export default function PlumbingServicesPage() {
           <p className="text-lg text-cyan-100 max-w-2xl">
             From leaky faucets to major pipe repairs, our licensed plumbers handle it all. Serving {siteConfig.city} with reliable, professional plumbing services 24/7.
           </p>
-          <div className="mt-8 flex flex-wrap gap-4">
-            <button
-              type="button"
-              className="rounded-lg bg-accent-500 px-6 py-3 font-semibold text-white shadow-lg transition-colors hover:bg-accent-600"
-              data-casey-trigger="true"
-            >
-              {caseyConfig.ctaText}
-            </button>
+          <div className="mt-8">
             <a
-              href="tel:+1-469-259-4385"
-              className="rounded-lg bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur transition-colors hover:bg-white/20"
+              href={caseyConfig.phoneHref}
+              className="inline-block rounded-lg bg-accent-500 px-6 py-3 font-semibold text-white shadow-lg transition-colors hover:bg-accent-600"
             >
-              Call (469) 259-4385
+              Call {caseyConfig.phone}
             </a>
           </div>
         </div>
@@ -192,13 +185,14 @@ export default function PlumbingServicesPage() {
           <p className="mt-4 text-brand-100">
             From simple repairs to complex installations, our licensed plumbers are ready to help.
           </p>
-          <button
-            type="button"
-            className="mt-6 rounded-lg bg-white px-8 py-3 font-semibold text-brand-600 shadow-lg transition-all hover:bg-brand-50 hover:scale-105"
-            data-casey-trigger="true"
-          >
-            {caseyConfig.ctaText}
-          </button>
+          <div className="mt-6">
+            <a
+              href={caseyConfig.phoneHref}
+              className="inline-block rounded-lg bg-white px-8 py-3 font-semibold text-brand-600 shadow-lg transition-all hover:bg-brand-50 hover:scale-105"
+            >
+              Call {caseyConfig.phone}
+            </a>
+          </div>
         </div>
       </section>
     </div>

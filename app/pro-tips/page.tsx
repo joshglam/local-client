@@ -78,13 +78,14 @@ export default function ProTipsPage() {
           <p className="mt-4 text-gray-600">
             Our team is available 24/7 to answer your plumbing questions and provide expert advice.
           </p>
-          <button
-            type="button"
-            className="mt-6 rounded-lg bg-brand-600 px-8 py-3 font-semibold text-white shadow-lg transition-colors hover:bg-brand-700"
-            data-casey-trigger="true"
-          >
-            {caseyConfig.ctaText}
-          </button>
+          <div className="mt-6">
+            <a
+              href={caseyConfig.phoneHref}
+              className="inline-block rounded-lg bg-brand-600 px-6 py-3 font-semibold text-white shadow-lg transition-colors hover:bg-brand-700"
+            >
+              Call {caseyConfig.phone}
+            </a>
+          </div>
         </div>
       </section>
     </div>

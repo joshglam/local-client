@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 import { Inter } from 'next/font/google';
 import { Header, Footer } from '@/components';
+import { CaseyProvider } from '@/components/casey';
+import { CaseyClientLoader } from '@/components/casey/CaseyClientLoader';
 import { siteConfig } from '@/lib/config';
 import './globals.css';
 
@@ -46,11 +48,14 @@ export default function RootLayout({
         `}
       </Script>
       <body className={`${inter.className} antialiased bg-white`}>
-        <div className="flex min-h-screen flex-col">
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </div>
+        <CaseyProvider>
+          <div className="flex min-h-screen flex-col">
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+          <CaseyClientLoader />
+        </CaseyProvider>
       </body>
     </html>
   );
