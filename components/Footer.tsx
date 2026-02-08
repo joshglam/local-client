@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { siteConfig } from '@/lib/config';
+import { siteConfig, caseyConfig } from '@/lib/config';
 import {
   coolingServices,
   heatingServices,
@@ -22,12 +22,18 @@ export function Footer() {
             <p className="mt-4 text-sm text-gray-400">
               Professional HVAC, plumbing, and electrical services in {siteConfig.city}. Available 24/7.
             </p>
+            <a
+              href={caseyConfig.phoneHref}
+              className="mt-4 inline-block rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-700"
+            >
+              Call {caseyConfig.phone}
+            </a>
             <button
               type="button"
-              className="mt-4 rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-700"
+              className="mt-2 block text-sm text-gray-400 transition-colors hover:text-white"
               data-casey-trigger="true"
             >
-              Chat With Us
+              Get pricing & availability →
             </button>
           </div>
           <div>
@@ -117,6 +123,12 @@ export function Footer() {
             <div className="flex gap-4">
               <Link href="/privacy" className="hover:text-white">Privacy Policy</Link>
               <Link href="/terms" className="hover:text-white">Terms of Service</Link>
+            </div>
+            <div className="text-xs text-gray-600">
+              AI chat powered by{' '}
+              <a href="https://caseyresponse.com" target="_blank" rel="noopener" className="hover:text-gray-400">
+                Casey Response AI
+              </a>
             </div>
           </div>
         </div>

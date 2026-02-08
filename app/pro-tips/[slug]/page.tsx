@@ -109,13 +109,14 @@ export default async function ProTipPage({ params }: ProTipPageProps) {
               <p className="mt-2 text-brand-100">
                 Chat with us for expert advice or to schedule a service call.
               </p>
-              <button
-                type="button"
-                className="mt-4 rounded-lg bg-white px-6 py-3 font-semibold text-brand-600 shadow-lg transition-all hover:bg-brand-50"
-                data-casey-trigger="true"
-              >
-                {caseyConfig.ctaText}
-              </button>
+              <div className="mt-4">
+                <a
+                  href={caseyConfig.phoneHref}
+                  className="inline-block rounded-lg bg-white px-6 py-3 font-semibold text-brand-600 shadow-lg transition-all hover:bg-brand-50"
+                >
+                  Call {caseyConfig.phone}
+                </a>
+              </div>
             </div>
           </div>
         </section>

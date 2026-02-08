@@ -11,6 +11,6 @@ export const siteConfig: SiteConfig = {
 
 export const caseyConfig = {
   tagline: 'Instant answers, real expertise',
-  ctaText: 'Get a Free Quote',
-  supportText: 'Chat with our team 24/7',
+  phone: '(469) 259-4385',
+  phoneHref: 'tel:+1-469-259-4385',
 };

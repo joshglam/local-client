@@ -157,9 +157,9 @@ export default function AboutPage() {
               href="https://caseyresponse.com"
               className="text-brand-600 hover:underline"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
             >
-              caseyresponse.com
+              Casey Response AI
             </a>
           </p>
         </div>
@@ -170,15 +170,16 @@ export default function AboutPage() {
         <div className="mx-auto max-w-3xl px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900">Ready to Experience the Difference?</h2>
           <p className="mt-4 text-gray-600">
-            Chat with us now to see how easy getting plumbing help can be.
+            Call us now to see how easy getting expert help can be.
           </p>
-          <button
-            type="button"
-            className="mt-6 rounded-lg bg-brand-600 px-8 py-3 font-semibold text-white shadow-lg transition-colors hover:bg-brand-700"
-            data-casey-trigger="true"
-          >
-            {caseyConfig.ctaText}
-          </button>
+          <div className="mt-6">
+            <a
+              href={caseyConfig.phoneHref}
+              className="inline-block rounded-lg bg-brand-600 px-6 py-3 font-semibold text-white shadow-lg transition-colors hover:bg-brand-700"
+            >
+              Call {caseyConfig.phone}
+            </a>
+          </div>
         </div>
       </section>
     </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-import { siteConfig } from '@/lib/config';
+import { siteConfig, caseyConfig } from '@/lib/config';
+import { CaseyInlineEmbed } from '@/components/casey';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
@@ -53,13 +54,9 @@ export default function ContactPage() {
                   Available 24/7, including holidays
                 </li>
               </ul>
-              <button
-                type="button"
-                className="mt-6 w-full rounded-lg bg-brand-600 px-6 py-3 font-semibold text-white shadow-lg transition-colors hover:bg-brand-700"
-                data-casey-trigger="true"
-              >
-                Start Chat Now
-              </button>
+              <div className="mt-6">
+                <CaseyInlineEmbed />
+              </div>
             </div>
 
             {/* Other Contact Methods */}
@@ -76,10 +73,10 @@ export default function ContactPage() {
                       Speak with a team member directly
                     </p>
                     <a
-                      href="tel:+1-469-259-4385"
+                      href={caseyConfig.phoneHref}
                       className="mt-2 block text-lg font-semibold text-brand-600 hover:underline"
                     >
-                      (469) 259-4385
+                      {caseyConfig.phone}
                     </a>
                     <p className="text-xs text-gray-500">Available 7am - 9pm daily</p>
                   </div>
@@ -139,19 +136,12 @@ export default function ContactPage() {
             For burst pipes, major leaks, or sewer backups, start a chat for immediate assistance
             or call us directly. We respond to emergencies 24/7.
           </p>
-          <div className="mt-4 flex flex-wrap justify-center gap-4">
-            <button
-              type="button"
-              className="rounded-lg bg-red-600 px-6 py-2 font-semibold text-white shadow-lg transition-colors hover:bg-red-700"
-              data-casey-trigger="true"
-            >
-              Emergency Chat
-            </button>
+          <div className="mt-4">
             <a
-              href="tel:+1-469-259-4385"
-              className="rounded-lg border-2 border-red-600 px-6 py-2 font-semibold text-red-600 transition-colors hover:bg-red-50"
+              href={caseyConfig.phoneHref}
+              className="inline-block rounded-lg bg-red-600 px-6 py-2 font-semibold text-white shadow-lg transition-colors hover:bg-red-700"
             >
-              Call (469) 259-4385
+              Call {caseyConfig.phone}
             </a>
           </div>
         </div>
