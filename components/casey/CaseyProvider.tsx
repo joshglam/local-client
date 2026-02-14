@@ -4,7 +4,8 @@ import { createContext, useContext, useReducer, useCallback, useEffect, type Rea
 import type { CaseyState, CaseyOpenOptions, ServiceCategorySlug, GuidedIntake, ChatMessage } from '@/lib/casey/types';
 import { caseyReducer, initialState, type CaseyAction } from '@/lib/casey/reducer';
 import { sendCaseyMessage } from '@/lib/casey/api';
-import { getVisitorId, getSessionId, resetSessionId, hasActiveSession } from '@/lib/casey/identity';
+import { getVisitorId, getSessionId, resetSessionId } from '@/lib/casey/identity';
+import { saveChatHistory, loadChatHistory, clearChatHistory, clearExpiredChatHistories } from '@/lib/casey/storage';
 import { getServicesByCategory } from '@/lib/services';
 
 async function callCaseyAPI(
@@ -50,14 +51,49 @@ export function useCasey(): CaseyContextValue {
 }
 
 export function CaseyProvider({ children }: { children: ReactNode }) {
-  const [state, dispatch] = useReducer(caseyReducer, initialState);
-
-  // If a session already exists (within 24h), skip the intake form and go straight to chat
-  useEffect(() => {
-    if (hasActiveSession()) {
-      dispatch({ type: 'SUBMIT_DETAILS', payload: '' });
+  const [state, dispatch] = useReducer(caseyReducer, initialState, (init) => {
+    // Only access localStorage on client side
+    if (typeof window === 'undefined') {
+      return init;
     }
+
+    // Initialize state from localStorage if available
+    const sessionId = getSessionId();
+    const stored = loadChatHistory(sessionId);
+
+    if (stored) {
+      // Restore the full chat state from localStorage (even if no messages yet)
+      return {
+        ...init,
+        messages: stored.messages,
+        intake: stored.intake,
+        guidedStep: stored.guidedStep,
+      };
+    }
+
+    return init;
+  });
+
+  // Clean up expired chat histories on mount
+  useEffect(() => {
+    clearExpiredChatHistories();
   }, []);
+
+  // Save state to localStorage whenever messages or intake changes (debounced)
+  useEffect(() => {
+    // Only save if there's something to persist
+    if (state.messages.length === 0 && state.guidedStep === 'category') {
+      return;
+    }
+
+    // Debounce saves to avoid excessive localStorage writes
+    const timeoutId = setTimeout(() => {
+      const sessionId = getSessionId();
+      saveChatHistory(sessionId, state.messages, state.intake, state.guidedStep);
+    }, 300);
+
+    return () => clearTimeout(timeoutId);
+  }, [state.messages, state.intake, state.guidedStep]);
 
   const open = useCallback(
     (options?: CaseyOpenOptions) => {
@@ -84,6 +120,8 @@ export function CaseyProvider({ children }: { children: ReactNode }) {
   const close = useCallback(() => dispatch({ type: 'CLOSE' }), []);
   const toggle = useCallback(() => dispatch({ type: 'TOGGLE' }), []);
   const reset = useCallback(() => {
+    const sessionId = getSessionId();
+    clearChatHistory(sessionId);
     resetSessionId();
     dispatch({ type: 'RESET' });
   }, []);

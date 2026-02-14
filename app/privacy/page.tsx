@@ -34,8 +34,9 @@ export default function PrivacyPage() {
             <li>
               <strong>Chat conversations:</strong> Messages and selections you
               provide when interacting with our AI chat assistant, including
-              service category, service type, urgency level, and problem
-              details.
+              service category, service type, urgency level, problem details,
+              and any contact information you provide. Chat data is stored both
+              in your browser (to resume sessions) and on our servers.
             </li>
             <li>
               <strong>Call records:</strong> When you call us, we may record
@@ -102,9 +103,11 @@ export default function PrivacyPage() {
               3 years after your last interaction.
             </li>
             <li>
-              <strong>Chat conversations:</strong> Retained for up to 2 years
-              to improve our services and for reference in ongoing service
-              relationships.
+              <strong>Chat conversations:</strong> Your chat session expires
+              after 7 days (you cannot resume old conversations), but we retain
+              conversation data on our servers for up to 2 years to improve our
+              AI assistant, provide customer support, and maintain service
+              records. You can request early deletion at any time.
             </li>
             <li>
               <strong>Call records:</strong> Retained for up to 1 year.
