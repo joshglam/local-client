@@ -1,0 +1,60 @@
+{
+  "auditDate": "2026-02-15",
+  "previousAuditDate": "2026-02-06",
+  "dataPeriod": { "start": "2026-02-06", "end": "2026-02-15" },
+  "dataAlignment": "GA and GSC both cover Feb 6-15 (10 days)",
+  "keyFindings": [
+    "/services/plumbing/pipe-repair is on PAGE 1 at position 4.58 with 161 impressions in 10 days — but 0 clicks. Single biggest CTR opportunity.",
+    "~2,230 impressions in 10 days across 65 indexed pages and 559 queries. Daily impression rate up ~15x from Feb 6 audit.",
+    "Still zero clicks sitewide. CTR optimization is now the #1 priority.",
+    "Carrollton is #1 location page (203 impressions). 'carrollton plumbing service' is the highest single query at 54 impressions.",
+    "Kennedale has best position among mid-high volume locations at 44.16 (improved from 53.67).",
+    "GA property contaminated with Roofs Etc roofing data — 19+ views from a separate website sharing the GA measurement ID."
+  ],
+  "biggestOpportunities": [
+    "Fix pipe-repair page CTR — position 4.58, 161 impressions, 0 clicks. At 5% CTR = ~8 clicks in 10 days.",
+    "Push 'local plumbers' to page 1 — 37 impressions at position 10.92, highest-value generic query.",
+    "Optimize generic plumbing queries at positions 10-20: 'plumbing repair' (21 impr, 16.05), 'plumbing repair near me' (20 impr, 15.95), 'need a plumber' (14 impr, 16.57).",
+    "Carrollton location page — 203 impressions, optimize for 'carrollton plumbing service' (54 impr).",
+    "Electrical quick wins — generator installation (pos 13.8) and electrical inspection (pos 10) near page 1."
+  ],
+  "topRisks": [
+    "Zero clicks after ~2,230 impressions — if CTR stays at 0%, Google may demote rankings.",
+    "GA property contaminated with Roofs Etc roofing data — engagement metrics unreliable.",
+    "Zero conversion tracking — still 0 key events in GA.",
+    "No branded queries — 100% reliance on non-branded search."
+  ],
+  "trafficOverview": {
+    "totalSessions": 45,
+    "organicSearchPct": 0,
+    "directPct": 97.8,
+    "organicSocialPct": 2.2,
+    "totalImpressions": 2229,
+    "totalClicks": 0,
+    "averageCTR": 0,
+    "indexedPages": 65,
+    "uniqueQueries": 559,
+    "bestPagePosition": 4.58,
+    "bestPagePath": "/services/plumbing/pipe-repair",
+    "brandedImpressionShare": 0
+  },
+  "comparisonWithPreviousAudit": {
+    "impressionsDailyRateChange": "~15x increase",
+    "impressionsPrevious": 398,
+    "impressionsPreviousPeriod": "28 days (only ~3 active days)",
+    "impressionsCurrent": 2229,
+    "impressionsCurrentPeriod": "10 days",
+    "queriesChange": "+153%",
+    "queriesPrevious": 221,
+    "queriesCurrent": 559,
+    "indexedPagesChange": "+30%",
+    "indexedPagesPrevious": 50,
+    "indexedPagesCurrent": 65,
+    "bestPositionPrevious": 14.5,
+    "bestPositionCurrent": 4.58,
+    "homepageEngagementPrevious": 2.28,
+    "homepageEngagementCurrent": 73.28,
+    "kennedalePositionPrevious": 53.67,
+    "kennedalePositionCurrent": 44.16
+  }
+}

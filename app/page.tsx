@@ -5,9 +5,9 @@ import { siteConfig, caseyConfig } from '@/lib/config';
 import { serviceCategories } from '@/lib/services';
 
 export const metadata: Metadata = {
-  title: 'Plumber & HVAC Services in Dallas-Fort Worth',
+  title: 'Local Plumber in Dallas-Fort Worth — Plumbing, HVAC & Electrical',
   description:
-    'Need a plumber in Dallas-Fort Worth? Local Answer provides emergency plumbing, HVAC repair, and electrical services across 50+ DFW cities. Licensed, insured, same-day service.',
+    'Need a plumber in DFW? Local Answer serves 50+ cities with same-day plumbing, HVAC & electrical services. Licensed pros, fast response. Call today.',
 };
 
 const categoryIcons: Record<string, React.ReactNode> = {

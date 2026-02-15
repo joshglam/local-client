@@ -124,8 +124,9 @@ export const electricalServices: ServicePage[] = [
   {
     slug: 'electrical-inspection',
     name: 'Electrical Inspection',
+    metaTitle: 'Electrical Inspection in Dallas-Fort Worth',
     category: 'electrical',
-    metaDescription: `Electrical inspection services in ${siteConfig.city}. Home electrical safety inspections, pre-purchase inspections, and code compliance checks.`,
+    metaDescription: `Home electrical inspection in DFW — safety checks, pre-purchase inspections & code compliance. Licensed electricians, detailed reports. Schedule today.`,
     hero: {
       title: 'Electrical Inspections',
       subtitle: 'Ensure your home is safe and up to code',
@@ -183,8 +184,9 @@ export const electricalServices: ServicePage[] = [
   {
     slug: 'generator-installation',
     name: 'Generator Installation',
+    metaTitle: 'Generator Installation in Dallas-Fort Worth',
     category: 'electrical',
-    metaDescription: `Generator installation in ${siteConfig.city}. Whole-home standby generators and portable generator hookups. Never lose power again.`,
+    metaDescription: `Whole-home standby generator installation in DFW. Automatic transfer switches, portable hookups & backup power solutions. Licensed electricians, free estimates.`,
     hero: {
       title: 'Generator Installation',
       subtitle: 'Backup power when you need it',

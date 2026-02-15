@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
   }
 
   return {
-    title: service.name,
+    title: service.metaTitle || service.name,
     description: service.metaDescription,
   };
 }
@@ -62,11 +62,31 @@ export default async function ServicePage({ params }: ServicePageProps) {
     })),
   };
 
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: service.name,
+    provider: {
+      '@type': 'LocalBusiness',
+      name: 'Local Answer',
+      telephone: caseyConfig.phoneHref.replace('tel:', ''),
+      areaServed: {
+        '@type': 'Place',
+        name: 'Dallas-Fort Worth',
+      },
+    },
+    description: service.metaDescription,
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
       <div className="bg-white">
         {/* Hero */}

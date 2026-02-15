@@ -15,6 +15,7 @@ export interface Location {
   zipCodes: string[];
   metaTitle?: string;
   metaDescription?: string;
+  h1?: string;
   faqs?: LocationFAQ[];
 }
 
@@ -120,6 +121,8 @@ export const locations: Location[] = [
     description: 'Carrollton offers a great mix of suburban living with urban amenities. Our team provides expert plumbing service to all Carrollton neighborhoods.',
     neighborhoods: ['Old Downtown Carrollton', 'Castle Hills', 'Indian Creek', 'Josey Ranch'],
     zipCodes: ['75006', '75007', '75010', '75011'],
+    metaTitle: 'Carrollton Plumber - Plumbing Services',
+    metaDescription: 'Carrollton plumbing service — emergency repairs, drain cleaning & water heaters. Licensed plumber serving Carrollton, TX. Same-day appointments available.',
   },
   {
     slug: 'cedar-hill',
@@ -147,6 +150,8 @@ export const locations: Location[] = [
     description: 'Colleyville features upscale homes and excellent schools. We provide premium plumbing services to Colleyville residents with attention to detail.',
     neighborhoods: ['Montclair', 'Colleyville Downs', 'The Parks of Colleyville'],
     zipCodes: ['76034'],
+    metaTitle: 'Colleyville TX Plumber - Plumbing Services',
+    metaDescription: 'Licensed plumber in Colleyville, TX. Emergency plumbing, drain cleaning & water heater repair. Same-day service in Colleyville and surrounding areas.',
   },
   {
     slug: 'coppell',
@@ -182,8 +187,8 @@ export const locations: Location[] = [
     description: 'Home to two major universities, Denton has a vibrant community with diverse housing needs. We service students, families, and businesses throughout Denton.',
     neighborhoods: ['Downtown Denton', 'Robson Ranch', 'Quakertown', 'Vintage Denton'],
     zipCodes: ['76201', '76203', '76205', '76207', '76208', '76209', '76210'],
-    metaTitle: 'Denton Plumber | Plumbing Services in Denton, TX',
-    metaDescription: 'Professional plumber in Denton, TX. Emergency plumbing, drain cleaning, water heater installation & pipe repair. Serving Downtown Denton, Robson Ranch & all neighborhoods.',
+    metaTitle: 'Denton Plumber - Plumbing Services in Denton, TX',
+    metaDescription: 'Professional plumber in Denton, TX. Emergency plumbing, drain cleaning & water heater repair. Licensed, insured, same-day service. Call for a free estimate.',
     faqs: [
       {
         question: 'Do you provide plumbing services near UNT and TWU in Denton?',
@@ -233,8 +238,8 @@ export const locations: Location[] = [
     description: 'Farmers Branch is conveniently located near major highways and offers great value. We serve all Farmers Branch neighborhoods with reliable plumbing and HVAC services.',
     neighborhoods: ['Brookhaven', 'Mercer Crossing', 'Valley View'],
     zipCodes: ['75234', '75244'],
-    metaTitle: 'Farmers Branch Plumber & HVAC | Heating Repair in Farmers Branch, TX',
-    metaDescription: 'Plumbing and HVAC services in Farmers Branch, TX. Heating repair, furnace service, emergency plumbing & drain cleaning. Fast response in Brookhaven, Mercer Crossing & all areas.',
+    metaTitle: 'Farmers Branch Plumber & HVAC - Heating & AC',
+    metaDescription: 'Plumbing, heating & AC services in Farmers Branch, TX. Furnace repair, HVAC maintenance, emergency plumbing. Licensed pros, same-day service.',
     faqs: [
       {
         question: 'Do you offer heating repair in Farmers Branch?',
@@ -267,6 +272,8 @@ export const locations: Location[] = [
     description: 'Forney is a rapidly growing community east of Dallas. Our plumbers serve both new construction and established homes in Forney.',
     neighborhoods: ['Devonshire', 'Windmill Farms', 'Jackson Crossing'],
     zipCodes: ['75126'],
+    metaTitle: 'Forney TX Plumber - Plumbing Services',
+    metaDescription: 'Licensed plumber in Forney, TX. Emergency plumbing, drain cleaning & water heater repair. Same-day service in Forney and surrounding areas.',
   },
   {
     slug: 'fort-worth',
@@ -336,6 +343,8 @@ export const locations: Location[] = [
     population: '45,000',
     description: 'Haltom City is a close-knit community northeast of Fort Worth. Our plumbers provide affordable, reliable service to Haltom City homes.',
     zipCodes: ['76117', '76137', '76148'],
+    metaTitle: 'Haltom City TX Plumber - Plumbing Services',
+    metaDescription: 'Licensed plumber in Haltom City, TX. Emergency plumbing, drain cleaning & water heater repair. Same-day service in Haltom City and surrounding areas.',
   },
   {
     slug: 'haslet',
@@ -344,6 +353,8 @@ export const locations: Location[] = [
     population: '2,000',
     description: 'Haslet is a small but growing community north of Fort Worth. We provide plumbing services to Haslet residents with fast response times.',
     zipCodes: ['76052'],
+    metaTitle: 'Haslet TX Plumber - Plumbing Services',
+    metaDescription: 'Licensed plumber in Haslet, TX. Emergency plumbing, drain cleaning & water heater repair. Same-day service in Haslet and surrounding areas.',
   },
   {
     slug: 'heath',
@@ -388,8 +399,8 @@ export const locations: Location[] = [
     population: '8,500',
     description: 'Kennedale is a small town with a friendly community feel. Our plumbers provide reliable service to Kennedale residents.',
     zipCodes: ['76060'],
-    metaTitle: 'Kennedale Plumber | Plumbing & Leak Detection in Kennedale, TX',
-    metaDescription: 'Professional plumber in Kennedale, TX. Leak detection, emergency plumbing, drain cleaning & water heater services. Fast response, upfront pricing.',
+    metaTitle: 'Kennedale Plumber - Emergency Plumbing & Repairs',
+    metaDescription: 'Trusted Kennedale plumber for emergency repairs, leak detection, water heaters & drain cleaning. Licensed & insured, same-day service in Kennedale, TX.',
     faqs: [
       {
         question: 'Do you offer leak detection in Kennedale?',
@@ -438,6 +449,8 @@ export const locations: Location[] = [
     description: 'Little Elm is a lakeside community on Lewisville Lake experiencing rapid growth. Our plumbers serve both new and established Little Elm homes.',
     neighborhoods: ['Union Park', 'Paloma Creek', 'Lakewood Village'],
     zipCodes: ['75068'],
+    metaTitle: 'Little Elm Plumber - Plumbing Services',
+    metaDescription: 'Licensed plumber in Little Elm, TX. Emergency plumbing, drain cleaning, water heater repair & installation. Same-day service, upfront pricing.',
   },
   {
     slug: 'lucas',
@@ -455,6 +468,8 @@ export const locations: Location[] = [
     description: 'Mansfield offers excellent schools and family-friendly neighborhoods. Our plumbers serve all of Mansfield with professional service.',
     neighborhoods: ['Walnut Creek', 'Creekwood', 'The Parks at Legacy'],
     zipCodes: ['76063'],
+    metaTitle: 'Mansfield TX Plumber - Plumbing Services',
+    metaDescription: 'Mansfield TX plumbing services — emergency repairs, drain cleaning & water heaters. Licensed plumber serving Mansfield, TX. Same-day service available.',
   },
   {
     slug: 'mckinney',
@@ -464,8 +479,8 @@ export const locations: Location[] = [
     description: 'McKinney blends historic charm with modern growth. Whether you have a historic downtown home or a new build in Craig Ranch, we have you covered.',
     neighborhoods: ['Historic Downtown', 'Craig Ranch', 'Stonebridge Ranch', 'Eldorado', 'Trinity Falls'],
     zipCodes: ['75069', '75070', '75071', '75072'],
-    metaTitle: 'McKinney Plumber | 24/7 Plumbing Services in McKinney, TX',
-    metaDescription: 'Need a plumber in McKinney, TX? Local Answer offers emergency plumbing, drain cleaning, water heater repair & more in Craig Ranch, Stonebridge Ranch & all McKinney neighborhoods.',
+    metaTitle: 'McKinney Plumber - Plumbing Services in McKinney, TX',
+    metaDescription: 'Licensed McKinney plumber for emergency repairs, drain cleaning & water heaters. Same-day plumbing service in McKinney, TX. Call now for fast response.',
     faqs: [
       {
         question: 'How much does a plumber cost in McKinney, TX?',
@@ -506,6 +521,8 @@ export const locations: Location[] = [
     description: 'Murphy is a family-oriented city with excellent schools. We provide quality plumbing services to Murphy homeowners.',
     neighborhoods: ['Maxwell Creek', 'Murphy Village'],
     zipCodes: ['75094'],
+    metaTitle: 'Murphy TX Plumber - Plumbing Services',
+    metaDescription: 'Licensed plumber in Murphy, TX. Emergency plumbing, drain cleaning, water heater repair & installation. Same-day service available.',
   },
   {
     slug: 'north-richland-hills',
@@ -532,6 +549,8 @@ export const locations: Location[] = [
     population: '18,000',
     description: 'Princeton is a fast-growing community northeast of Dallas. We serve Princeton residents with professional plumbing services.',
     zipCodes: ['75407'],
+    metaTitle: 'Princeton TX Plumber - Plumbing Services',
+    metaDescription: 'Licensed plumber in Princeton, TX. Emergency plumbing, drain cleaning & water heater repair. Fast service in Princeton and surrounding areas.',
   },
   {
     slug: 'prosper',
@@ -550,6 +569,8 @@ export const locations: Location[] = [
     description: 'Richardson features a mix of mid-century homes and newer developments near the Telecom Corridor. Our plumbers are experienced with both older and modern plumbing systems.',
     neighborhoods: ['Canyon Creek', 'Prairie Creek', 'Reservation', 'Breckinridge', 'Telecom Corridor'],
     zipCodes: ['75080', '75081', '75082', '75083'],
+    metaTitle: 'Richardson TX Plumber - Plumbing Services',
+    metaDescription: 'Licensed plumber in Richardson, Texas. Emergency plumbing, water line repair, drain cleaning & water heaters. Fast response times in Richardson, TX.',
   },
   {
     slug: 'rockwall',
@@ -649,6 +670,8 @@ export const locations: Location[] = [
     population: '18,000',
     description: 'Terrell is a historic community east of Dallas with affordable housing options. Our plumbers serve Terrell residents with reliable service.',
     zipCodes: ['75160'],
+    metaTitle: 'Terrell TX Plumber - Plumbing Services',
+    metaDescription: 'Licensed plumber in Terrell, TX. Emergency plumbing, drain cleaning & water heater repair. Serving Terrell and Kaufman County with same-day service.',
   },
   {
     slug: 'the-colony',
