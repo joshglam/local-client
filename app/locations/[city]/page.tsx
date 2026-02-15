@@ -113,7 +113,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
               <span className="text-white">{location.name}</span>
             </nav>
             <h1 className="text-4xl font-bold text-white sm:text-5xl">
-              {location.name} Plumber
+              {location.h1 || `${location.name} Plumber`}
             </h1>
             <p className="mt-4 max-w-2xl text-lg text-brand-100">
               Professional plumbing services in {location.name}, Texas.

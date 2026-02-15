@@ -215,49 +215,78 @@ export const plumbingServices: ServicePage[] = [
   {
     slug: 'pipe-repair',
     name: 'Pipe Repair & Replacement',
+    metaTitle: 'Water Line & Pipe Repair in Dallas-Fort Worth',
     category: 'plumbing',
-    metaDescription: `Pipe repair and repiping in ${siteConfig.city}. Expert repair for all pipe materials. Trenchless options available.`,
+    metaDescription: `Fast water line repair, sewer line replacement & emergency pipe break service across DFW. Licensed plumbers, same-day response. Free estimates — call now.`,
     hero: {
-      title: 'Pipe Repair & Replacement',
-      subtitle: 'Expert repairs and repiping solutions',
+      title: 'Water Line & Pipe Repair Services in Dallas-Fort Worth',
+      subtitle: 'Emergency pipe break, water line & sewer line repair across DFW',
     },
-    quickAnswer: `Pipe repair in ${siteConfig.city} costs $150-$500 for accessible repairs. Full home repiping ranges from $4,000-$15,000 depending on size and materials.`,
+    quickAnswer: `Local Answer provides emergency water line repair, sewer line replacement, and pipe break services across Dallas-Fort Worth. Our licensed plumbers offer same-day response with trenchless repair options available in Coppell, Dallas, Carrollton, Richardson, and 50+ DFW cities.`,
     content: `
-      <h2>Pipe Services</h2>
+      <h2>Emergency Pipe Break Repair</h2>
+      <p>When a pipe breaks, every minute counts. Our licensed plumbers respond same-day to pipe break emergencies across Dallas, Coppell, Richardson, and the entire DFW metroplex. We locate the break, stop the water damage, and make permanent repairs — not temporary patches.</p>
       <ul>
-        <li><strong>Pipe repair</strong> — fix leaks and damage</li>
-        <li><strong>Pipe replacement</strong> — sections or systems</li>
-        <li><strong>Repiping</strong> — upgrade old pipes</li>
-        <li><strong>Trenchless repair</strong> — minimal digging</li>
+        <li><strong>Burst pipe repair</strong> — fast response to stop water damage</li>
+        <li><strong>Frozen pipe repair</strong> — thawing and reinforcement</li>
+        <li><strong>Slab leak repair</strong> — under-foundation pipe breaks</li>
       </ul>
 
-      <h2>When to Repipe</h2>
+      <h2>Water Line Repair &amp; Replacement</h2>
+      <p>Aging or damaged water lines cause low pressure, discolored water, and costly leaks. We repair and replace main water lines and supply lines using modern materials that last decades.</p>
       <ul>
-        <li>Galvanized pipes over 50 years old</li>
-        <li>Frequent leaks</li>
-        <li>Discolored water</li>
-        <li>Low water pressure</li>
+        <li><strong>Main water line repair</strong> — from meter to house</li>
+        <li><strong>Supply line replacement</strong> — upgrade old galvanized or polybutylene pipes</li>
+        <li><strong>Whole-home repiping</strong> — complete system upgrade with PEX or copper</li>
+      </ul>
+
+      <h2>Sewer Line Repair</h2>
+      <p>Sewer line problems — backups, slow drains, foul odors — need professional diagnosis and repair. We use camera inspection to pinpoint the issue before any digging.</p>
+      <ul>
+        <li><strong>Sewer line replacement</strong> — full or partial</li>
+        <li><strong>Root intrusion repair</strong> — remove roots and seal joints</li>
+        <li><strong>Bellied or collapsed sewer lines</strong> — excavation and replacement</li>
+      </ul>
+
+      <h2>Trenchless Pipe Repair</h2>
+      <p>Trenchless technology allows us to repair or replace underground pipes without tearing up your yard, driveway, or landscaping. Faster, less disruptive, and often more affordable than traditional excavation.</p>
+      <ul>
+        <li><strong>Pipe lining (CIPP)</strong> — cures a new pipe inside the old one</li>
+        <li><strong>Pipe bursting</strong> — pulls new pipe through the old one</li>
+        <li><strong>Minimal excavation</strong> — only small access points needed</li>
       </ul>
 
       <h2>Costs</h2>
       <ul>
-        <li><strong>Simple repair:</strong> $150-$500</li>
-        <li><strong>Whole house repipe:</strong> $4,000-$15,000</li>
-        <li><strong>Trenchless sewer repair:</strong> $3,000-$10,000</li>
+        <li><strong>Simple pipe repair:</strong> $150–$500</li>
+        <li><strong>Water line replacement:</strong> $1,500–$4,000</li>
+        <li><strong>Whole-home repipe:</strong> $4,000–$15,000</li>
+        <li><strong>Trenchless sewer repair:</strong> $3,000–$10,000</li>
       </ul>
+
+      <h2>Service Areas</h2>
+      <p>We provide water line and pipe repair services across the Dallas-Fort Worth metroplex, including Coppell, Dallas, Carrollton, Richardson, McKinney, Denton, Frisco, and 50+ cities. <a href="/locations">View all service areas</a>.</p>
     `,
     faqs: [
       {
-        question: `How much does repiping cost in ${siteConfig.city}?`,
-        answer: `Repiping costs $4,000-$8,000 for small homes and $8,000-$15,000 for larger homes. PEX is typically 20-30% less than copper.`,
+        question: 'How quickly can you respond to a pipe break in Dallas?',
+        answer: 'We offer same-day emergency response for pipe breaks across Dallas-Fort Worth. In most cases, a licensed plumber can be on-site within a few hours of your call.',
+      },
+      {
+        question: 'Do you offer sewer line repair in Coppell and Richardson?',
+        answer: 'Yes, we provide sewer line repair, replacement, and camera inspection in Coppell, Richardson, and 50+ DFW cities. We offer both traditional and trenchless repair methods.',
       },
       {
         question: 'What is trenchless pipe repair?',
-        answer: 'Trenchless repair allows pipe replacement without extensive digging, minimizing landscape damage and completing faster.',
+        answer: 'Trenchless repair allows pipe replacement without extensive digging, using methods like pipe lining (CIPP) or pipe bursting. It minimizes landscape damage and typically completes faster than traditional excavation.',
       },
       {
-        question: 'How long does repiping take?',
-        answer: 'Whole house repiping typically takes 2-5 days depending on home size and complexity.',
+        question: 'How much does repiping cost in Dallas-Fort Worth?',
+        answer: 'Repiping costs $4,000–$8,000 for small homes and $8,000–$15,000 for larger homes. PEX piping is typically 20–30% less expensive than copper.',
+      },
+      {
+        question: 'How do I know if my water line needs repair?',
+        answer: 'Signs include unexplained high water bills, low water pressure, discolored water, wet spots in your yard, or the sound of running water when all fixtures are off. Call for a professional inspection if you notice any of these.',
       },
     ],
     priceRange: '$150 - $15,000+',

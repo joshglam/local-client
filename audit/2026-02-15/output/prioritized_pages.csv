@@ -1,0 +1,21 @@
+Priority,Page,Impressions,Position,Issue,Opportunity,Effort
+P0,/services/plumbing/pipe-repair,161,4.58,"Page 1 ranking with 0 clicks — title/meta not compelling","Fix CTR to generate ~8 clicks per 10 days at 5% CTR",Low
+P0,/ (homepage),0 (not in GSC),—,"Not appearing in GSC page data","Target 'local plumbers' (37 impr pos 10.92) and 'plumber' (14 impr pos 16.57)",Medium
+P0,/services/plumbing,0 (not in GSC),—,"Plumbing hub not capturing generic queries","Target 'plumbing repair' (21 impr pos 16.05) and 'plumbing repair near me' (20 impr pos 15.95)",Medium
+P0,/locations/carrollton,203,63.42,"#1 location page. Highest single query 'carrollton plumbing service' (54 impr)","Optimize title/meta for carrollton plumbing service exact phrase",Medium
+P1,/locations/kennedale,77,44.16,"Best position among mid-high volume locations. Improving (was 53.67)","Continue optimizing — on track toward page 1",Medium
+P1,/locations/mansfield,119,50.77,"Strong impressions + good position","Optimize for 'mansfield tx plumbing' (33 impr pos 47)",Medium
+P1,/locations/little-elm,56,48.54,"Good position. Growing impressions (was 8 impr pos 67)","Optimize for little elm plumber cluster",Medium
+P1,/locations/denton,146,57.03,"High impressions. Position improving (was 66.89)","Optimize for denton plumber cluster (90+ impressions)",Medium
+P1,/locations/mckinney,168,66.95,"2nd highest impressions but position stuck around 67","Optimize for mckinney plumber cluster (90+ impressions)",Medium
+P1,/locations/richardson,110,54.31,"Solid impressions and position","Optimize for 'plumber richardson texas' (20 impr pos 51.75)",Medium
+P1,/locations/farmers-branch,83,68.71,"HVAC query cluster (~51 impressions in 10 days)","Add HVAC content sections — heating repair furnace repair AC repair",Medium
+P1,/services/electrical/generator-installation,5,13.8,"Near page 1 — first electrical page to rank","Optimize title/meta to push to page 1",Low
+P2,/locations/princeton,16,18.06,"Page 2 position. Small city less competition","Push to page 1 with title/content optimization",Low
+P2,/locations/murphy,16,23.75,"Good position for smaller city","Optimize title and content",Low
+P2,/locations/terrell,27,28.33,"Good position and decent impressions","Optimize for terrell plumber queries",Low
+P2,/locations/haslet,34,32.53,"Good position. Improving (was 61)","Continue building content",Low
+P2,/locations/colleyville,21,32.1,"Strong position improvement","Optimize for colleyville plumber queries",Low
+P2,/locations/haltom-city,21,33.57,"Good position for smaller city","Optimize title and content",Low
+P2,/locations/forney,27,35.81,"Good position and decent impressions","Optimize for forney plumber queries",Low
+P2,/pro-tips/how-to-find-main-water-shutoff,17,81.12,"Content page with 12+ question-based query variants","Add AEO answer paragraph and FAQ schema",Medium

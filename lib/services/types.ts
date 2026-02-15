@@ -1,6 +1,7 @@
 export interface ServicePage {
   slug: string;
   name: string;
+  metaTitle?: string;
   category: 'plumbing' | 'cooling' | 'heating' | 'electrical';
   metaDescription: string;
   hero: {

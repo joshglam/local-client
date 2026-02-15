@@ -1,0 +1,154 @@
+# ----------------------------------------
+# View user engagement & retention overview
+# Account: casey response
+# Property: local answer
+# ----------------------------------------
+#  
+# Start date: 20260206
+# End date: 20260215
+Nth day,Active users
+0000,11
+0001,4
+0002,4
+0003,5
+0004,7
+0005,7
+0006,4
+0007,7
+0008,5
+0009,0
+
+# Start date: 20260206
+# End date: 20260215
+Nth day,New users
+0000,10
+0001,2
+0002,3
+0003,4
+0004,6
+0005,6
+0006,3
+0007,6
+0008,5
+0009,0
+
+# Where do your new users come from?
+# Start date: 20260206
+# End date: 20260215
+First user primary channel group (Default Channel Group),New users
+Direct,44
+Organic Social,1
+
+#  
+# Start date: 20260206
+# End date: 20260215
+Page title and screen class,Views
+Plumber & HVAC Services in Dallas-Fort Worth,89
+Roofing Services in the Tri-State Area | Roofs Etc,19
+Local Answer - Professional Plumbing Services in Dallas,10
+Commercial Roofing Services | Roofs Etc,4
+Privacy Policy | Local Answer,4
+Terms of Service | Local Answer,4
+404: This page could not be found.,3
+About Us | Local Answer,3
+EPDM Flat Roofing | Roofs Etc,3
+Pro Tips - Plumbing Advice from the Experts | Local Answer,3
+Service Areas | Local Answer,3
+Cooling Services | Local Answer,2
+Roofing Repairs & Maintenance | Roofs Etc,2
+TPO Roofing | Roofs Etc,2
+About Us | Roofs Etc,1
+"Allen Plumber | Plumbing Services in Allen, TX | Local Answer",1
+"Anna Plumber - Plumbing Services in Anna, TX | Local Answer",1
+"Argyle Plumber - Plumbing Services in Argyle, TX | Local Answer",1
+"Burleson Plumber - Plumbing Services in Burleson, TX | Local Answer",1
+Heating Services | Local Answer,1
+"Princeton Plumber - Plumbing Services in Princeton, TX | Local Answer",1
+Pro Tips - Roofing Advice from the Experts | Roofs Etc,1
+"Richardson Plumber - Plumbing Services in Richardson, TX | Local Answer",1
+Roofing Financing | Roofs Etc,1
+Service Areas | Roofs Etc,1
+Why You Should Avoid Chemical Drain Cleaners | Local Answer,1
+
+#  
+# Start date: 20260206
+# End date: 20260215
+Platform,Active users
+"[""Web""]",45
+
+#  
+# Start date: 20260206
+# End date: 20260215
+Cohort,Day 1,Day 7
+0,0.1,0
+1,0,0
+2,0,0
+3,0,0
+4,0,0
+5,0,0
+6,0,0
+7,0,0
+8,0,0
+9,0,0
+
+#  
+# Start date: 20260206
+# End date: 20260215
+Cohort,Day 1,Day 7
+0,1449,0
+1,0,0
+2,0,0
+3,0,0
+4,0,0
+5,0,0
+6,0,0
+7,0,0
+8,0,0
+9,0,0
+
+#  
+# Start date: 20260104
+# End date: 20260214
+Cohort,Average engagement time per active user
+0000,11.350468975468976
+0001,34.642857142857146
+0002,0.04878048780487805
+0003,0.75
+0004,1.1794871794871795
+0005,1.6842105263157894
+0006,8.837837837837839
+0007,1.3888888888888888
+0008,6.3428571428571425
+0009,3.235294117647059
+0010,0
+0011,0
+0012,0
+0013,0
+0014,0
+0015,0
+0016,0
+0017,0
+0018,0
+0019,0
+0020,0
+0021,0
+0022,0
+0023,0
+0024,0
+0025,0
+0026,0
+0027,0
+0028,0
+0029,0
+0030,0
+0031,0
+0032,0
+0033,0
+0034,0
+0035,0
+0036,0
+0037,0
+0038,0
+0039,0
+0040,0
+0041,0

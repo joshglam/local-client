@@ -6,14 +6,17 @@ export interface ProTip {
   category: 'maintenance' | 'emergency' | 'savings' | 'seasonal';
   publishedAt: string;
   readTime: string;
+  faqs?: { question: string; answer: string }[];
 }
 
 export const proTips: ProTip[] = [
   {
     slug: 'how-to-find-main-water-shutoff',
-    title: 'How to Find and Use Your Main Water Shut-Off Valve',
+    title: 'How to Find Your Main Water Shut-Off Valve',
     excerpt: 'Every homeowner should know where their main water shut-off valve is located. In an emergency, shutting off the water quickly can prevent thousands of dollars in damage.',
     content: `
+      <p><strong>Your main water shut-off valve is typically located near the front of your home where the water line enters the building — check the garage, basement, utility closet, or near the water meter at the street.</strong> There are two types: gate valves (round handle, turn clockwise) and ball valves (lever handle, turn 90 degrees).</p>
+
       <p>Every homeowner should know where their main water shut-off valve is located. In an emergency like a burst pipe, shutting off the water quickly can prevent thousands of dollars in water damage.</p>
 
       <h2>Where to Look</h2>
@@ -44,6 +47,20 @@ export const proTips: ProTip[] = [
     category: 'emergency',
     publishedAt: '2026-01-15',
     readTime: '3 min',
+    faqs: [
+      {
+        question: 'Where is the main water shut-off valve in my house?',
+        answer: 'In most Dallas-area homes, the main water shut-off valve is located where the water line enters your home — typically in the garage, basement, or utility closet. You can also find a shut-off at the water meter near the street.',
+      },
+      {
+        question: 'How do I turn off the main water valve?',
+        answer: 'For a gate valve (round handle), turn it clockwise until it stops. For a ball valve (lever handle), turn it 90 degrees so the handle is perpendicular to the pipe. Both types fully stop water flow to your home.',
+      },
+      {
+        question: 'What does a main water shut-off valve look like?',
+        answer: 'Main water shut-off valves come in two types: gate valves with a round wheel-like handle, and ball valves with a straight lever handle. Ball valves are more common in newer homes and are easier to operate.',
+      },
+    ],
   },
   {
     slug: 'prevent-frozen-pipes-dallas',
