@@ -3,6 +3,7 @@ import type { MetadataRoute } from 'next';
 import { siteConfig } from '@/lib/config';
 import { allServices } from '@/lib/services';
 import { locations } from '@/lib/locations';
+import { proTips } from '@/lib/pro-tips';
 
 const gitDateCache = new Map<string, Date>();
 
@@ -93,5 +94,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...categoryPages, ...servicePages, ...locationPages];
+  const proTipDate = getGitDate('lib/pro-tips.ts');
+  const proTipPages: MetadataRoute.Sitemap = proTips.map((tip) => ({
+    url: `${baseUrl}/pro-tips/${tip.slug}`,
+    lastModified: proTipDate,
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  }));
+
+  return [...staticPages, ...categoryPages, ...servicePages, ...locationPages, ...proTipPages];
 }
